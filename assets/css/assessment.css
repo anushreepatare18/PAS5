@@ -1,0 +1,23 @@
+body{
+    background:#f5f7fb;
+}
+
+.card{
+    border-radius:12px;
+}
+
+.card-header{
+    border-radius:12px 12px 0 0 !important;
+}
+
+.table th{
+    text-align:center;
+}
+
+.table td{
+    vertical-align:middle;
+}
+
+input[type=number]{
+    text-align:center;
+}

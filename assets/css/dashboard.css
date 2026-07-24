@@ -1,0 +1,170 @@
+/* ============================================================
+   Oxford Blue (Premium University ERP Theme)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+/* LIGHT THEME (Oxford Blue Base) */
+:root {
+  --primary-color: #1E3A8A;      /* Oxford Blue */
+  --secondary-color: #2563EB;    /* Royal Blue */
+  --accent-color: #60A5FA;       /* Sky Blue */
+  --bg-color: #F8FAFC;           /* Light Gray */
+  --card-bg: #FFFFFF;            /* White Cards */
+  --text-color: #1F2937;          /* Dark Gray Text */
+  --border-color: #E2E8F0;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Inter', sans-serif;
+  --card-radius: 12px;
+  --shadow-default: 0 4px 20px rgba(30, 58, 138, 0.06);
+  --shadow-hover: 0 10px 25px rgba(30, 58, 138, 0.12);
+}
+
+/* DARK THEME (Deep Navy Base with Royal Blue Highlights) */
+[data-theme="dark"] {
+  --primary-color: #2563EB;      /* Royal Blue Primary */
+  --secondary-color: #60A5FA;    /* Sky Blue Highlights */
+  --accent-color: #93C5FD;
+  --bg-color: #0F172A;           /* Deep Navy Background */
+  --card-bg: #1E293B;            /* Dark Cards */
+  --text-color: #F8FAFC;          /* Light Gray Text */
+  --border-color: #334155;
+  --shadow-default: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .dashboard-title {
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+.dashboard-title {
+  color: var(--primary-color) !important;
+}
+
+/* Sidebar Styles */
+.sidebar-wrapper {
+  background-color: var(--card-bg) !important;
+  border-right: 1px solid var(--border-color);
+}
+
+.sidebar-item {
+  display: flex !important;
+  align-items: center !important;
+  padding: 10px 14px !important;
+  border-radius: 10px !important;
+  color: var(--text-color) !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(37, 99, 235, 0.1) !important;
+  color: var(--secondary-color) !important;
+}
+
+.sidebar-item.active {
+  background-color: var(--primary-color) !important;
+  color: #FFFFFF !important;
+}
+
+.sidebar-subitem {
+  padding: 8px 12px 8px 30px !important;
+  font-size: 0.9rem !important;
+  color: var(--text-color) !important;
+  text-decoration: none !important;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-subitem:hover {
+  color: var(--secondary-color) !important;
+  background-color: rgba(37, 99, 235, 0.08);
+}
+
+/* Navigation Bar & Theme Toggle */
+.theme-toggle-btn {
+  border-radius: 30px !important;
+  padding: 6px 14px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Card Styling */
+.card-custom {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: var(--card-radius) !important;
+  box-shadow: var(--shadow-default) !important;
+  padding: 1.5rem !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.4s ease;
+}
+
+.card-custom:hover {
+  box-shadow: var(--shadow-hover) !important;
+}
+
+.card-title-custom {
+  font-family: var(--font-primary);
+  color: var(--primary-color) !important;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-value-custom {
+  font-family: var(--font-primary);
+  color: var(--primary-color) !important;
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+
+/* Progress Bars */
+.progress-custom {
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-custom {
+  height: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+/* Tables in Dark/Light Modes */
+.table {
+  color: var(--text-color) !important;
+}
+
+.table-light {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .table {
+  --bs-table-bg: transparent;
+  color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .table-light {
+  background-color: #334155 !important;
+  color: #F8FAFC !important;
+}

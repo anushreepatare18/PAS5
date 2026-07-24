@@ -1,0 +1,139 @@
+/* ==========================
+   ERP Navbar
+========================== */
+
+.top-navbar{
+
+position:fixed;
+
+left:270px;
+
+top:0;
+
+right:0;
+
+height:75px;
+
+background:#ffffff;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 30px;
+
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.navbar-left h2{
+
+color:#1E3A8A;
+
+font-size:24px;
+
+}
+
+.navbar-center input{
+
+width:320px;
+
+height:42px;
+
+padding:0 15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+
+outline:none;
+
+}
+
+.navbar-right{
+
+display:flex;
+
+align-items:center;
+
+gap:25px;
+
+}
+
+.notification{
+
+position:relative;
+
+font-size:24px;
+
+cursor:pointer;
+
+}
+
+.notification span{
+
+position:absolute;
+
+top:-8px;
+
+right:-10px;
+
+background:red;
+
+color:white;
+
+font-size:11px;
+
+padding:2px 6px;
+
+border-radius:50%;
+
+}
+
+.date-time{
+
+font-weight:600;
+
+color:#555;
+
+}
+
+.faculty-info{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.faculty-info img{
+
+width:45px;
+
+height:45px;
+
+border-radius:50%;
+
+}
+
+.faculty-info h4{
+
+font-size:15px;
+
+color:#1E3A8A;
+
+}
+
+.faculty-info p{
+
+font-size:12px;
+
+color:#666;
+
+}
