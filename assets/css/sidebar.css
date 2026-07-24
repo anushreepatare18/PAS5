@@ -1,0 +1,265 @@
+/* ===================================
+   Oxford Blue ERP Sidebar
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F8FAFC;
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:270px;
+
+    height:100vh;
+
+    background:#1E3A8A;
+
+    color:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    box-shadow:4px 0 15px rgba(0,0,0,.15);
+
+    z-index:1000;
+
+}
+
+/* Logo */
+
+.logo{
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+}
+
+.logo h2{
+
+    font-size:36px;
+
+    font-weight:bold;
+
+}
+
+.logo h4{
+
+    font-size:17px;
+
+    margin-top:8px;
+
+}
+
+.logo p{
+
+    margin-top:12px;
+
+    font-size:12px;
+
+    line-height:20px;
+
+    opacity:.9;
+
+}
+
+/* Faculty */
+
+.profile{
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.profile img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    border:4px solid rgba(255,255,255,.25);
+
+}
+
+.profile h3{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+}
+
+.profile span{
+
+    font-size:13px;
+
+    opacity:.8;
+
+}
+
+/* Menu */
+
+.sidebar ul{
+
+    list-style:none;
+
+    margin-top:20px;
+
+}
+
+.sidebar ul li{
+
+    margin:8px 15px;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:14px 18px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:#2563EB;
+
+    transform:translateX(5px);
+
+}
+
+/* Logout */
+
+.logout{
+
+    margin-top:auto;
+
+    padding:20px;
+
+}
+
+.logout a{
+
+    display:block;
+
+    background:#DC2626;
+
+    color:white;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.logout a:hover{
+
+    background:#B91C1C;
+
+}
+.sidebar{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 270px;
+    height: 100vh;
+
+    background: #1E3A8A;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;      /* Vertical Scroll */
+    overflow-x: hidden;
+
+    scrollbar-width: thin; /* Firefox */
+
+    box-shadow: 4px 0 15px rgba(0,0,0,.15);
+
+    z-index: 1000;
+
+}
+/* Sub Menu */
+
+.submenu{
+
+    display:none;
+
+    list-style:none;
+
+    padding-left:20px;
+
+    margin-top:5px;
+
+}
+
+.submenu li{
+
+    margin:6px 0;
+
+}
+
+.submenu li a{
+
+    font-size:14px;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    display:block;
+
+    padding:8px 10px;
+
+    border-radius:5px;
+
+}
+
+.submenu li a:hover{
+
+    background:#34495e;
+
+}

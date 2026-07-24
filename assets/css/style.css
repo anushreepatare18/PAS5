@@ -1,0 +1,26 @@
+.glass-panel { 
+    background: rgba(255, 255, 255, 0.75); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+}
+.dark .glass-panel { 
+    background: rgba(18, 30, 61, 0.75); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); 
+}
+.scrollbar-thin::-webkit-scrollbar { width: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #334155; border-radius: 9999px; }
+
+select, input[type="date"], input[type="time"] {
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
+}
+
+/* Edit Mode Toggles */
+.edit-mode-input { display: none; }
+.is-editing .edit-mode-input { display: block; }
+.is-editing .view-mode-text { display: none; }
+
+/* Smooth accordion transitions */
+.accordion-content { transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; max-height: 0; opacity: 0; overflow: hidden; }
+.accordion-content.expanded { max-height: 300px; opacity: 1; }
